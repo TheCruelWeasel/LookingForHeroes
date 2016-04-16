@@ -1,0 +1,371 @@
+ul {
+  list-style-type: none; }
+
+a {
+  margin: 0;
+  padding: 0; }
+
+.btn-hollow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 95px;
+  width: 350px;
+  transform: skew(-0.25rad) perspective(1px) translate3d(0, 0, 0);
+  border-radius: 7px;
+  padding: .35em 2em;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 40px;
+  border-spacing: 10px;
+  cursor: pointer; }
+
+.btn-shape {
+  transition-duration: 300ms;
+  display: inline-block;
+  position: absolute;
+  height: 80px;
+  min-width: 100px;
+  width: calc(100% - 6px);
+  border-radius: 7px; }
+
+.btn-link {
+  padding: .35em 2em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 22px;
+  display: block;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  text-decoration: none; }
+
+.btn-link:hover {
+  text-decoration: none;
+  color: #4e4949; }
+
+.btn-link:visited {
+  text-decoration: none; }
+
+.btn-hollow:hover {
+  transition-duration: 300ms;
+  border: 2px solid #fff; }
+
+.btn-border-primary-color:hover > .btn-shape {
+  transition-duration: 300ms;
+  background: #fff; }
+
+.btn-border-secondary-color:hover > .btn-shape {
+  transition-duration: 300ms;
+  background: #fff; }
+
+.btn-border-secondary-color:hover > .btn-shape > .btn-content {
+  transition-duration: 300ms;
+  color: #4e4949; }
+
+.btn-content {
+  transition-duration: 300ms;
+  display: block;
+  position: relative;
+  transform: skew(0.25rad);
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  text-align: center; }
+
+.btn-border-primary-color {
+  border: 2px solid #ffc70e; }
+
+.btn-primary-color {
+  background: #ffc70e; }
+
+.btn-content-primary {
+  color: #4e4949; }
+
+.btn-border-secondary-color {
+  border: 2px solid rgba(0, 195, 255, 0.7); }
+
+.btn-secondary-color {
+  background: rgba(0, 195, 255, 0.7); }
+
+.btn-content-secondary {
+  color: #eee; }
+
+html, body {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif; }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background: #fff; }
+  .header .logo {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 500px;
+    top: 10px;
+    background-image: url("../img/logo.jpg");
+    background-size: auto 100px;
+    background-repeat: no-repeat; }
+  .header .menu-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 40px;
+    right: 100px; }
+    .header .menu-btn i {
+      color: #626262; }
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .container .sub-header {
+    position: relative;
+    width: 100%;
+    height: 669px;
+    background-image: url("../img/head-background.png"); }
+    .container .sub-header .save-the-world {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1000px;
+      height: 200px;
+      left: calc(50% - 500px);
+      top: 100px;
+      color: #e5ebfb;
+      font-family: "Open Sans", sans-serif;
+      font-style: italic;
+      font-size: 4em;
+      font-weight: 700; }
+    .container .sub-header .btn-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 850px;
+      height: 200px;
+      left: calc(50% - 425px);
+      bottom: 100px; }
+      .container .sub-header .btn-wrap .find-a-team-btn {
+        position: relative; }
+      .container .sub-header .btn-wrap .or {
+        position: relative;
+        width: 140px;
+        height: 50px;
+        margin-top: 5px; }
+        .container .sub-header .btn-wrap .or .dash {
+          display: inline-block;
+          position: relative;
+          height: 3px;
+          width: 20px;
+          background: white;
+          margin-bottom: 5px;
+          margin-left: 10px;
+          margin-right: 10px; }
+        .container .sub-header .btn-wrap .or .or-txt {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 25px; }
+      .container .sub-header .btn-wrap .find-players-btn {
+        position: relative; }
+  .container .sec1 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #fff; }
+    .container .sec1 h2 {
+      color: #aeaeae;
+      font-family: "Open Sans", sans-serif;
+      font-style: italic;
+      font-size: 2em;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 100px; }
+    .container .sec1 ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 90%;
+      max-width: 1200px;
+      min-height: 300px;
+      padding: 0;
+      margin: auto; }
+      .container .sec1 ul li {
+        position: relative;
+        height: 300px;
+        width: 20%;
+        min-width: 300px;
+        margin-right: 10%; }
+        .container .sec1 ul li .elem-title h3 {
+          color: #757575;
+          font-family: "Open Sans", sans-serif;
+          font-style: italic;
+          font-size: 1.7em;
+          font-weight: 700;
+          text-align: center;
+          margin-top: 100px; }
+        .container .sec1 ul li .elem-icon {
+          position: relative;
+          text-align: center; }
+          .container .sec1 ul li .elem-icon img {
+            width: auto;
+            height: 90px;
+            margin-top: 20px;
+            margin-bottom: 20px; }
+        .container .sec1 ul li .elem-txt {
+          padding-left: 50px;
+          padding-right: 50px;
+          color: #aeaeae;
+          text-align: center;
+          font-weight: 600;
+          font-size: 1.1em; }
+      .container .sec1 ul li.last {
+        margin-right: 0%; }
+  .container .sec2 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: #e5ebfb; }
+    .container .sec2 .txt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      float: left;
+      width: calc(100% - 1202px);
+      height: 100%; }
+      .container .sec2 .txt ul li {
+        height: 170px; }
+        .container .sec2 .txt ul li .stat {
+          font-family: "Open Sans", sans-serif;
+          font-style: italic;
+          font-size: 7em;
+          font-weight: 700; }
+        .container .sec2 .txt ul li .stat-side-txt {
+          color: #757575;
+          font-family: "Open Sans", sans-serif;
+          font-size: 1.6em;
+          font-weight: 700; }
+        .container .sec2 .txt ul li .yellow {
+          color: #ffc70e; }
+        .container .sec2 .txt ul li .blue {
+          color: #00c3ff; }
+        .container .sec2 .txt ul li .red {
+          color: #ff003c; }
+      .container .sec2 .txt ul li.first-elem {
+        margin-left: 130px; }
+      .container .sec2 .txt ul li.second-elem {
+        margin-left: 0px; }
+      .container .sec2 .txt ul li.third-elem {
+        margin-left: 50px; }
+      .container .sec2 .txt ul li.fourth-elem {
+        margin-left: 0px; }
+    .container .sec2 .tracer {
+      position: relative;
+      width: 1202px;
+      height: 1000px;
+      background-image: url("../img/tracer-sec2-xl.png");
+      float: right; }
+  .container .sec3 {
+    position: relative;
+    width: 100%;
+    height: 669px;
+    background-image: url("../img/sec3.png");
+    -moz-box-shadow: inset 0 10px 60px #000;
+    -webkit-box-shadow: inset 0 10px 60px #000;
+    box-shadow: inset 0 10px 60px #000; }
+    .container .sec3 .save-the-world {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1000px;
+      height: 200px;
+      left: calc(50% - 500px);
+      top: 100px;
+      color: #e5ebfb;
+      font-family: "Open Sans", sans-serif;
+      font-style: italic;
+      font-size: 4em;
+      font-weight: 700; }
+    .container .sec3 .btn-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 850px;
+      height: 200px;
+      left: calc(50% - 425px);
+      bottom: 100px; }
+      .container .sec3 .btn-wrap .find-a-team-btn {
+        position: relative; }
+      .container .sec3 .btn-wrap .or {
+        position: relative;
+        width: 140px;
+        height: 50px;
+        margin-top: 5px; }
+        .container .sec3 .btn-wrap .or .dash {
+          display: inline-block;
+          position: relative;
+          height: 3px;
+          width: 20px;
+          background: white;
+          margin-bottom: 5px;
+          margin-left: 10px;
+          margin-right: 10px; }
+        .container .sec3 .btn-wrap .or .or-txt {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 700;
+          color: white;
+          font-size: 25px; }
+      .container .sec3 .btn-wrap .find-players-btn {
+        position: relative; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #323232; }
+  .footer .copyright {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #aeaeae;
+    padding-left: 30px; }
+  .footer .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #aeaeae;
+    padding-left: 30px; }
+    .footer .links a {
+      margin-right: 20px; }
+
+/*# sourceMappingURL=app.css.map */
